@@ -11,7 +11,6 @@ A cool binary string must satisfy the following two conditions.
 Hint: Optimize your logic to avoid Time Limit Exceeded Error.
 
 Boundary Condition(s):
-
 1 <= Length of S <= 10^3
 
 Input Format:
