@@ -1,0 +1,95 @@
+Array Incrementing and Decrementing Pattern
+
+The program must accept an array of N integers and an integer T as the input. The program
+must modify the array T times based on the following conditions.
+- The program must reduce the value of an integer by 1 at a time (left to right circularly).
+- If an integer value reaches 0, then the program must start increasing the value by 1 till
+  the integer reaches its original value. Then the program must decrement the value to 0,
+  then increment the value to its original value, and so on.
+- After each modification, the program must print the integers in the revised array.
+
+Boundary Condition(s);
+2 <= N <= 25
+1 <= Each integer value <= 50
+1 <- T <= 10^4
+
+input Format:
+The first line contains N.
+The second line contains N integers separated by a space.
+The third line contains T.
+
+Output Format:
+The first T lines, each contains N integers separated by a space representing the revised array.
+
+Example Input/Output 1:
+Input:
+4
+4 2 5 1
+25
+
+Output:
+3251
+3151
+3141
+3140
+2140
+2040
+2030
+2031
+1031
+1131
+1121
+1120
+0120
+0220
+0210
+0211
+1211
+1111
+1101
+1100
+2100
+2000
+2010
+2011
+3011
+
+Example Input/Output 2:
+Input:
+5
+4 3 2 1 4
+30
+
+Output:
+33214
+32214
+32114
+32104
+32103
+22103
+21103
+21003
+21013
+21012
+11012
+10012
+10112
+10102
+10101
+00101
+01101
+01201
+01211
+01210
+11210
+12210
+12110
+12100
+12101
+22101
+23101
+23001
+23011
+23012
+
+Max Execution Time Limit: 500 millisecs
