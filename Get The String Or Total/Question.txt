@@ -1,0 +1,55 @@
+Get The String Or Total
+
+The function/method getStringOrTotal accepts an argument str The string str contains the
+integer values separated by a space or the alphabets separated by a space.
+
+The function/method getStringOrTotal must return a string value based on the following conditions.
+-If the string str contains integers, then the function must return their sum as a string.
+- Else the function must form a string by concatenationg the alphabets and return the string.
+Your task is to implement the function getStringOrTotal so that the program runs successfully
+
+IMPORTANT: Do not write the main() function as it is given below.
+
+int main()
+{
+
+    char str [101];
+    scanf ("% [^\n\r]", str);
+    char *result = getStringOrTotal(str);
+    if (result == NULL || result == str)
+    {
+        printf( "String is not formed\n");
+    }
+    if (result [0] == '\0' || result[0] == ' ')
+    {
+        printf("String is empty \n");
+    }
+    printf("%s", result);
+    return 0;
+}
+
+Example Input/Output 1:
+
+Input:
+12 45 7 -200 6100
+
+Output:
+5964
+
+Explanation:
+The given string contains the integer values separated by a space.
+12 + 45 + 7 + (-200) + 6100 = 5964
+
+Example Input/Output 2:
+
+Input:
+S k i l l R a c k
+
+Output:
+SkillRack
+
+Explanation:
+The given string contains the alphabets separated by a space.
+S k i l l R a c k -> SkillRack.
+
+Max Execution Time Limit: 150 millisecs
