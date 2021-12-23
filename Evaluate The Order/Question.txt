@@ -1,0 +1,57 @@
+Evaluate The Order
+
+The function/method evaluateTheOrder accepts an argument str. The string str contains integers
+separated by the relational operators (greater than > and less than < )
+The function/method evaluateTheOrder must return the integer value 1 if all the relationships
+between the integers in the string are true. Else the function must return the integer value 0.
+Your task is to implement the function evaluateTheOrder so that the program runs successfully.
+
+IMPORTANT: Use the main() function given below.
+
+int main()
+{
+    char str [101] ;
+    scanf ("%s", str) ;
+    printf("%d", evaluateTheOrder(str) );
+    return 0;
+}
+
+Boundary Condition(s):
+1 <= Each integer value in the given string <= 10^6
+
+Example Input/Output 1:
+UECi
+Input
+10<20<50>10<400>5268
+
+Output:
+1
+
+Explanation:
+10<20 = True
+20<50 = True
+50> 10 = True
+10<400 = True
+400>5 = True
+5<6 = True
+All the relationships between the integers are True.
+Hence 1 is printed as the output.
+
+Example Input/Output 2:
+
+Input:
+450>255<300>301>101<102<555
+
+Output:
+
+Explanation:
+450>255 = True
+255 <300 = True
+300>301 = False
+301> 101 = True
+101 <102 = True
+102 <555 = True
+The 3'd relational operator returns False.
+Hence 0 is printed as the output.
+
+Max Execution Time Limit: 150 millisecs
