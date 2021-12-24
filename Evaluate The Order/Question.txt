@@ -20,7 +20,7 @@ Boundary Condition(s):
 1 <= Each integer value in the given string <= 10^6
 
 Example Input/Output 1:
-UECi
+
 Input
 10<20<50>10<400>5268
 
