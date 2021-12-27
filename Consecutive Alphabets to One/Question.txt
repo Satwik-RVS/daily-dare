@@ -1,0 +1,36 @@
+Consecutive Alphabets to One
+
+The program must accept a string S containing only alphabets as the input. The program must
+replace all the consecutive occurrences of the alphabets(ignoring case) with is and all the og
+remaining alphabets with Os. Finally, the program must print the decimal equivalent of S by
+considering it as a binary representation.
+
+Boundary Condition(s):
+1 <= Length of S <=50
+Input Format:
+The first line contains S.
+Output Format:
+The first line contains an integer value based on the given conditions.
+
+Example Input/Output 1:
+
+Input:
+oops
+
+Output:
+12
+
+Explanation:
+oops -> 1100 -> 12
+
+Example Input/Output 2:
+
+Input:
+AabBCcdeEeg
+
+Output:
+2030
+
+Explanation:
+AabBCcdeEeg -> 11111101110 -> 2030
+Max Execution Time Limit: 150 millisecs
