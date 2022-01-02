@@ -1,0 +1,50 @@
+function AddOrConcate
+
+The function/method concatorAdd accepts two arguments str1 and str2 representing two
+string values. The values of both str1 and str2 can be integers or floating point values
+words.The function/method concatOrAdd must return a string based on the following conditions.
+- If both str1 and str2 are integers, then the function return their sum as a string.
+- If both str1 and str2 are floating point values, then the function return their sum with the 36
+  precision up to 2 decimal places as a string.
+Otherwise, the function must concatenate both the words and return the concatenated
+string. Your task is to implement the function concatorAdd so that the program runs successfully.
+
+IMPORTANT: Do not write the main() function.
+
+Example Input/Output 1:
+
+Input:
+300 450
+
+Output:
+750
+
+Explanation:
+Both the values are integer values.
+So their sum is printed.
+
+Example Input/Output 2:
+
+Input:
+15.52 123.676
+
+Output:
+139.20
+
+Explanation:
+Both the values are floating point values.
+So their sum is printed with the precision up to 2 decimal places.
+
+Example Input/Output 3:
+
+Input:
+Skill Rack
+
+Output:
+SkillRack
+
+Explanation:
+Both the values are string values(words).
+So they are concatenated and printed as the output.
+
+Max Execution Time Limit: 100 millisecs
