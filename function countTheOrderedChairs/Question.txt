@@ -1,0 +1,53 @@
+function countTheOrderedChairs
+
+The function/method countTheOrderedChairs accepts an argument str representing a string
+value. The string str contains only unique lower case alphabets Each alphabet in the string str
+represents a chair.
+
+The function/method countTheOrderedChairs must return an integer representing the number
+of chairs arranged in alphabetical order with respect to their positions. The order of the 26
+chairs must be abcdefghijkimnoparstuvwxyz.
+
+Your task is to implement the function countTheOrderedChairs so that the program runs
+successfully.
+
+
+IMPORTANT: Use the main() function, which is defined below.
+
+int main()
+{
+    char str[27];
+    scanf("%s", str);
+    printf("%d", countTheOrderedChairs(str));
+    return 0;
+}
+
+
+Example Input/Output 1:
+
+Input:
+abcdwxyz
+
+Output:
+4
+
+Explanation:
+Only the first 4 chairs(a, b, c and d) are arranged in alphabetical order with respect to their
+positions.
+The position of the chair w must be 23.
+The position of the chair x must be 24.
+The position of the chair y must be 25.
+The position of the chair z must be 26.
+
+Example Input/Output 2:
+
+Input:
+abcxyzghij
+
+Output:
+7
+
+Explanation:
+The chairs a, b, c, g, h, i and j are arranged in alphabetical order with respect to their positions.
+
+Max Execution Time Limit: 100 millisecs
