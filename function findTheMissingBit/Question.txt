@@ -1,0 +1,47 @@
+function findTheMissingBit
+
+The function/method findTheMissingBit accepts two arguments str and X. The string str
+represents the binary representation of the integer X but exactly one bit is missing.
+The function/method findTheMissingBit must find the missing bit in the string S and return the
+missing bit as an integer value.
+
+Your task is to implement the function findMissing Bit so that the program runs successfully.
+
+IMPORTANT: Use the main() function, Which is defined below.
+
+int main()
+{
+    char str[1001];
+    scanf("%s",str);
+    int X;
+    scanf("%d",&X);
+    printf("%d",findTheMissingBit(str,X));
+    return 0;
+}
+
+
+Example Input/Output 1:
+
+Input:
+10111
+45
+
+Output:
+0
+
+Explanation:
+The string S = "10111".
+The binary representation of 45 is 101101.
+The missing bit in the string S is 0, which is printed as the output.
+
+Example Input/Output 2:
+
+Input:
+111
+15
+
+Output:
+1
+
+Max Execution Time Limit: 500 millisecs
+
