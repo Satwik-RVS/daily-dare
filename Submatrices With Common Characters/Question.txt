@@ -1,0 +1,50 @@
+Submatrices With Common Characters
+
+The program must accept a character matrix of size R*C and an integer K as the input. The
+values of R and C are always divisible by K, The program must print the count of common
+characters in all the K*K submatrices of the given matrix.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+The (R+2)nd line contains K.
+
+Output Format:
+The first line contains an integer representing the count of common characters in all the K*K
+submatrices of the given matrix.
+
+Example Input/Output 1:
+
+Input:
+6 9
+s b k g s y w g f
+r g y e q j j a s 
+s m s a s z s l e
+u s q u e h s s s
+g s t h s s e s g 
+x a r h g y s s s
+3
+
+Output:
+2
+
+Explanation:
+The 2 common characters in all the six 3*3 submatrices are given below.
+s and g
+
+Example Input/Output 2:
+Input:
+4 4
+a A A a
+9 * * 9
+* 9 9 *
+A a a A
+2
+
+Output:
+4
+
+Max Execution Time Limit: 100 millisecs
