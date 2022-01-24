@@ -1,0 +1,54 @@
+function characterFrequencyReduction
+
+The function/method characterFrequencyReduction accepts two arguments str and K
+representing a string value and an integer value respectively.
+The function/method characterFrequencyReduction must remove the characters after their Kth
+occurrence in the given string(from left to right). Then the function must return the revised
+string as a new string.
+
+Your task is to implement the function characterFrequencyReduction so that the program runs
+successfully
+
+IMPORTANT: Use the main() function, Which is defined below.
+
+int main( )
+{
+    char str[1001];
+    int K;
+    scanf("%s\n%d", str, &K);
+    char *newStr = characterFrequencyReduction (str, K);
+    if (newStr == str || newStr == NULL)
+    {
+        printf( "New String is not formed\n");
+    }
+    if (newStr[0] == ' ' || newStr[0] == '\0' )
+    {
+        printf("String is empty\n");
+    }
+    printf("%s", newStr);
+    return 0;
+}
+
+Example Input/Output 1:
+
+Input:
+aabbabcdccbab
+
+Output:
+aabbede
+
+Explanation:
+Here the given string is aabbabcdccbab and K=2.
+
+After removing the characters that occur more than 2 times in the given string, the string
+becomes aabbcdc.
+
+Example Input/Output 2:
+
+Input:
+TOOLONGTOURtoolongtour
+
+Output:
+TOOLNGTURtoolngtur
+
+Max Execution Time Limit: 100 millisecs
