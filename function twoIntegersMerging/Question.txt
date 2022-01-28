@@ -1,0 +1,78 @@
+function twoIntegersMerging
+
+The function/method twoIntegersMerging accepts two arguments - SIZE and arr. The
+integer SIZE represents the size of the integer array arr
+The function/method mergeEvery Twointegers must merge every two integers X and Y in the
+array based on the following conditions.
+- The integers X and Y can be merged only if the sum of the last digit of X and the first digit of
+  is less than or equal to 9.
+- If it is not possible to merge X and Y, then the function must keep the two integers as they
+  are.
+Finally, the function must return the resulting integers as an array.
+
+Note: The size of the given array is always even.
+Your task is to implement the function twoIntegersMerging so that the program runs
+successfully.
+
+The following structure is used to represent the boundedArray and is already defined in the
+default code (Do not write this definition again in your code).
+
+typedef struct BoundedArray
+{
+    int SIZE;
+    long long int *arr;
+}boundedArray;
+
+IMPORTANT: Use the main() function, which is defined below.
+
+int main()
+{
+    int N;
+    scanf ("%d", &N) ;
+    int arr [N];
+    for (int index = 0; index < N; index++)
+    {
+        scanf ("%d", &arr[index]);
+    }
+    boundedArray *bArr = twoIntegersMerging(N, arr);
+
+    for (int index = 0; index < bArr->SIZE; index++)
+    {
+        printf("%1ld ", bArr->arr[index]) ;
+    }
+    return 0;
+}
+
+Example Input/Output 1:
+
+Input
+6
+124 182 606 504 255 42
+
+Output:
+12582 606 504 2592
+
+Explanation:
+124 182 -> 12(4+1)82 -> 12582
+606 504 -> Cannot be merged -> 606 504
+255 42 -> 25(5+4)2 -> 2592
+
+Example Input/Output 2:
+
+Input:
+4
+1325564 8075456 4521210 5987655
+
+Output
+1325564 8075456 4521215987655
+
+Example Input/Output 3:
+
+Input:
+8
+8991 800 8250 7006 16 543 4002 6372
+
+Output:
+899900 8257006 16 543 4008372
+
+Max Execution Time Limit: 500 millisecs
