@@ -1,0 +1,62 @@
+function fetchTotalDuration
+
+The function/method fetchTotalDuration accepts an argument str representing a string value.
+The string str contains the duration of a certain number of videos (in 24-hr format
+HH:MM:SS) separated by a space.
+The function/method fetchTotalDuration must return the total duration of the videos in days,
+hours, minutes and seconds.
+Your task is to implement the function fetchTotalDuration so that the program runs
+successfully.
+The following structure is used to represent the Duration and is already defined in the default
+code (Do not write this definition again in your code).
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Duration
+{
+    int days;
+    int hours;
+    int minutes;
+    int seconds;
+};
+
+
+IMPORTANT: Use the main() function, which is defined below.
+
+int main()
+{
+    char str[1001];
+    scanf("%[^\n]", str);
+    struct Duration *duration = fetchTotalDuration(str);
+    if(duration == NULL)
+    {
+        printf("Duration is not formed\n");
+    }
+    printf("%d %d %d %d", duration->days, duration->hours, duration->minutes, duration->seconds);
+    return 0;
+}
+
+
+Example Input/Output 1:
+
+Input:
+01:50:30 23:30:15 00:05:08
+
+Output:
+1 1 25 53
+
+Explanation:
+1st video: 01:50:30
+2nd video: 23:30:15
+3rd video: 00:05:08
+The total duration of the 3 videos in days, hours, minutes and seconds is given below.
+1 day, 1 hour, 25 minutes and 53 seconds.
+
+Example Input/Output 2:
+
+Input:
+20:25:50 20:25:50 20:25:50 00:00:01
+
+Output:
+2 13 17 31 
