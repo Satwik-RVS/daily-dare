@@ -1,0 +1,54 @@
+Plus Inside with Diamond Outside Pattern
+
+The program must accept an integer N as the input. The program must print (2*N)-1 lines of
+pattern as shown in the Example Input/Output section. The asterisks in the pattern indicate
+the diamond and plus symbols. The hyphens in the pattern indicate the empty spaces.
+
+Boundary Condition(s):
+2 <= N <= 50
+
+Input Format:
+The first line contains N.
+
+Output Format:
+The first (2*N)-1 lines contain the desired pattern as shown in the Example Input/Output
+section.
+
+Example Input/Output 1:
+
+Input:
+5
+
+Output:
+--------*
+------*-*-*
+----*---*---*
+--*-----*-----*
+*-*-*-*-*-*-*-*-*
+--*-----*-----*
+----*---*---*
+------*-*-*
+--------*
+
+Explanation:
+Here N=5, so the pattern contains 9 lines ((2*5)-1) of output.
+
+Example Input/Output 2:
+
+Input:
+6
+
+Ouput:
+----------*
+--------*-*-*
+------*---*---*
+----*-----*-----*
+--*-------*-------*
+*-*-*-*-*-*-*-*-*-*-*
+--*-------*-------*
+----*-----*-----*
+------*---*---*
+--------*-*-*
+----------*
+
+Max Execution Time Limit: 100 millisecs
