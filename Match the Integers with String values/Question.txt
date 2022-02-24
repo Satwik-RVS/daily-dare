@@ -26,7 +26,7 @@ twotwothree 59
 fivenine 8
 
 Output:
-2413
+2 4 1 3
 
 Explanation:
 1st string onezero matches the 2nd integer 10.
@@ -41,7 +41,8 @@ Input:
 sixsevenzero 1000
 twothree 23
 onezerozerozero 670
+
 Output:
-321
+3 2 1
 
 Max Execution Time Limit: 500 millisecs
