@@ -1,0 +1,59 @@
+function findMaxOfMinMaxInTwoArrays
+
+The function/method findMaxOfMinMaxInTwoArrays accepts five arguments - SIZE1, arr1, SIZE2,
+arr2 and K. The integer SIZE1 represents the size of the integer array arr1. The integer SIZE2
+represents the size of the integer array arr2. K represents an integer value.
+The function/method findMaxOfMinMaxInTwoArrays must find the count of integers greater than
+K in the array arr1 as X and the count of integers smaller than K in the array arr2 as Y. Then
+the function must return an integer representing the maximum value between X and Y.
+
+IMPORTANT: Use the main() function, Which is defined below.
+
+int main()
+{
+    int M, N, K;
+    scanf("%d %d", &M, &N);
+    int arr1[M], arr2[N];
+    for(int index = 0; index < M; index++)
+    {
+        scanf("%d ", &arr1[index]);
+    }
+    for(int index = 0; index < N; index++)
+    {
+        scanf("%d ", &arr2[index]);
+    }
+    scanf("%d", &K);
+    printf("%d", findMaxOfMinMaxInTwoArrays(M, arr1, N, arr2, K));
+    return 0;
+}
+
+Example Input/Output 1:
+
+Input:
+5 6
+10 17 13 6 16
+15 8 23 6 33 78
+10
+
+Output:
+3
+
+Explanation:
+Here K = 10.
+There are 3 integers greater than 10 in the 1st array -> 17, 13 and 16.
+There are 2 integers smaller than 10 in the 2nd array -> 8 and 6.
+The maximum value between 3 and 2 is 3.
+Hence 3 is printed as the output.
+
+Example Input/Output 2:
+
+Input:
+7 6
+68 92 94 12 34 93 14
+90 27 37 26 12 83
+50
+
+Output:
+4
+
+Max Execution Time Limit: 500 millisecs
