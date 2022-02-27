@@ -1,0 +1,53 @@
+Reduce The Matrix Powers of Two
+#Not Used
+The program must accept a matrix of size N*N containing only digits as the input. The value
+of N is always a power of two. The program must reduce the N*N matrix to 1*1 matrix based
+on the following conditions.
+- The program must replace each 2*2 submatrix with the sum of the elements in the
+submatrix. Then the program must print the reduced matrix.
+- Then the program must repeat above the process till the size of the matrix becomes 1*1.
+
+Boundary Condition(s):
+2<=N<=64
+
+Input Format: { The first line contains N.
+The next N lines, each contains N digits separated by a space.
+
+Output Format:
+The lines contain the reduced matrices.
+
+Example Input/Output 1:
+
+Input:
+8
+1 3 8 2 7 1 3 7
+6 8 4 3 9 8 0 0
+2 9 3 3 9 0 7 1
+4 8 0 5 2 9 6 1
+8 8 7 1 5 6 3 2
+5 0 4 0 7 3 1 1
+4 7 5 6 3 6 4 6
+0 3 6 6 7 7 3 0
+
+Output:
+18 17 25 10
+23 11 20 15
+21 12 21 7
+14 23 23 13
+69 70
+70 64
+273
+
+Explanation:
+Here N = 8.
+8*8 -> 4*4 -> 2*2 -> 1*1.
+The 4*4 reduced matrix is given below.
+18 17 25 10
+23 11 20 15
+21 12 21 7
+14 23 23 13
+The 2*2 reduced matrix is given below.
+69 70
+70 64
+The 1*1 reduced matrix is given below.
+273
