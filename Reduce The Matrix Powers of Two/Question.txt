@@ -1,5 +1,5 @@
 Reduce The Matrix Powers of Two
-#Not Used
+
 The program must accept a matrix of size N*N containing only digits as the input. The value
 of N is always a power of two. The program must reduce the N*N matrix to 1*1 matrix based
 on the following conditions.
