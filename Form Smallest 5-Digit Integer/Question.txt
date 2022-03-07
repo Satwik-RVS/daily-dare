@@ -31,7 +31,7 @@ Input:
 46
 
 Output:
-1
+-1
 
 Example Input/Output 3:
 
