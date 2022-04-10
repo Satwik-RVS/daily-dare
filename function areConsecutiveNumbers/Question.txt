@@ -1,0 +1,57 @@
+function areConsecutiveNumbers
+
+The function/method areConsecutive accepts an argument str. The string str contains only
+digits.
+The function/method areConsecutive must return 1 if the given string represents the
+concatenation of two consecutive integers. Else the function must return 0.
+
+Your task is to implement the function areConsecutive so that the program runs successfully.
+
+Note : Use the main() function, which is defined below.
+
+int main()
+{
+  char str[101];
+  scanf ("%s", str);
+  printf ("%d", areConsecutive(str));
+  return 0;
+}
+
+Example Input/Output 1:
+
+Input:
+256257
+
+Output:
+1
+
+Explanation:
+Here the given string is 256257.
+The two integers in the string are 256 and 257 which are consecutive.
+So 1 is printed as the output.
+
+Example Input/Output 2:
+
+Input:
+4241
+
+Output:
+1
+
+Example Input/Output 3:
+
+Input:
+99100
+
+Output:
+1
+
+Example Input/Output 4:
+
+Input:
+20412024
+
+Output:
+0
+
+Max Execution Time Limit: 500 millisecs
