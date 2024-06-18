@@ -5,7 +5,7 @@ integer SIZE represents the size of the integer array arr
 The function/method mergeEvery Twointegers must merge every two integers X and Y in the
 array based on the following conditions.
 - The integers X and Y can be merged only if the sum of the last digit of X and the first digit of
-  is less than or equal to 9.
+  Y is less than or equal to 9.
 - If it is not possible to merge X and Y, then the function must keep the two integers as they
   are.
 Finally, the function must return the resulting integers as an array.
